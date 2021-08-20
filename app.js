@@ -4,7 +4,7 @@ function insertNum(num) {
 }
 function equalTo() {
   screen.innerHTML
-    ? (screen.innerHTML = eval(screen.innerHTML).toFixed(2))
+    ? (screen.innerHTML = eval(screen.innerHTML).toFixed(3))
     : false;
 }
 function eraseNum() {
