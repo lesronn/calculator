@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+  
+    <div id="container">
+     <div id="screen" style="font-size: 6rem;">
+
+     </div>
+     <div id="btns">
+        <div class="rowt row">
+          
+            <button onclick="eraseNum()">⌫</button>
+           
+            <button onclick="clearInput()">C</button>
+        </div>
+         <div class="row1 row">
+             <button onclick="insertNum(7)">7</button>
+             <button onclick="insertNum(8)">8</button>
+             <button onclick="insertNum(9)">9</button>
+             <button onclick="insertNum('/')">÷</button>
+         </div>
+         <div class="row2 row">
+            <button onclick="insertNum(4)">4</button>
+            <button onclick="insertNum(5)">5</button>
+            <button onclick="insertNum(6)">6</button>
+            <button onclick="insertNum('*')">×</button>
+         </div>
+         <div class="row3 row">
+            <button onclick="insertNum(1)">1</button>
+            <button onclick="insertNum(2)">2</button>
+            <button onclick="insertNum(3)">3</button>
+            <button onclick="insertNum('-')">−</button>
+         </div>
+         <div class="row4 row">
+            <button onclick="insertNum(0)">0</button>
+            <button onclick="insertNum('.')">•</button>
+            <button onclick="insertNum('+')">+</button>
+            <button onclick="equalTo()" ">=</button>
+         </div>
+     </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

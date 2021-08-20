@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --calcbg: #494a4a;
+  --calcscreen: #cdddce;
+  --calcheight: 650px;
+}
+@font-face {
+  font-family: "digital";
+  src: url("/fonts/digital-7.ttf");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Regular.ttf");
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  height: var(--calcheight);
+  width: 580px;
+  background: var(--calcbg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.8rem;
+  padding: 3rem 2rem;
+}
+#screen {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background: var(--calcscreen);
+  border-radius: 1rem;
+  height: calc(var(--calcheight) / 5);
+  padding: 0 1rem;
+  font-family: "digital";
+  margin-bottom: 3rem;
+}
+#btns {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  font-family: "Nunito";
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+.rowt button:first-child {
+  grid-column: 3/3;
+}
+.rowt button:last-child {
+  grid-column: 4/4;
+  background: rgb(190 32 57);
+  color: white;
+}
+.row4 button:last-child {
+  background: rgb(240 170 71);
+  color: white;
+}
+button {
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+}
